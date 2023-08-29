@@ -1,7 +1,7 @@
 {
   "type": "panel",
-  "name": "ePict Panel",
-  "id": "larona-epict-panel",
+  "name": "ePict Panel v2",
+  "id": "larona-epict-panel-v2",
   "info": {
     "description": "Enter the URL of the image you want, and add some metrics on it.",
     "author": {

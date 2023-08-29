@@ -15,6 +15,7 @@ export interface Box {
   fontSize: number;
   prefixSize: number;
   suffixSize: number;
+  paddingSize: number;
   color: string;
   decimal: number;
   isUsingThresholds: boolean;

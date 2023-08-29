@@ -18,13 +18,15 @@
     "@grafana/data": "~8.5.10",
     "@grafana/toolkit": "~8.5.10",
     "@grafana/ui": "~8.5.10",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
     "emotion": "10.0.27"
   },
   "engines": {
     "node": ">=12 <17"
   },
   "dependencies": {
-    "@grafana/runtime": "^8.5.0"
+    "@grafana/runtime": "8.5.0"
   },
   "resolutions": {
     "immer": "^9.0.6",
