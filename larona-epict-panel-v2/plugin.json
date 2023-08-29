@@ -1,7 +1,7 @@
 {
   "type": "panel",
-  "name": "ePict Panel",
-  "id": "larona-epict-panel",
+  "name": "ePict Panel v2",
+  "id": "larona-epict-panel-v2",
   "info": {
     "description": "Enter the URL of the image you want, and add some metrics on it.",
     "author": {
@@ -29,7 +29,7 @@
     ],
     "screenshots": [],
     "version": "2.0.6",
-    "updated": "2023-04-17"
+    "updated": "2023-08-29"
   },
   "dependencies": {
     "grafanaDependency": ">=8.5.x",

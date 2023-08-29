@@ -23,6 +23,7 @@ export const MigHandler = (panel: PanelModel<Partial<SimpleOptions>> | any): Par
         colorHigh: oldBox.colorHigh,
         colorLow: oldBox.colorLow,
         colorMedium: oldBox.colorMedium,
+        paddingSize: oldBox.paddingSize,
         decimal: oldBox.decimal,
         fontSize: oldBox.fontsize,
         hasOrb: oldBox.hasOrb,
