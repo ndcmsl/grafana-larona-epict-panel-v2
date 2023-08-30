@@ -27,6 +27,8 @@ export const MigHandler = (panel: PanelModel<Partial<SimpleOptions>> | any): Par
         decimal: oldBox.decimal,
         fontSize: oldBox.fontsize,
         hasOrb: oldBox.hasOrb,
+        width: oldBox.width,
+        height: oldBox.height,
         hasBackground: false,
         backgroundColor: '#5794F2',
         orbHideText: oldBox.orbHideText,

@@ -46,7 +46,9 @@ export const BoxesEditor: React.FC<StandardEditorProps> = ({ item, value, onChan
       orbLocation: 'Left',
       orbSize: 10,
       prefixSize: 10,
-      paddingSize: 10,
+      width: 0,
+      height: 0,
+      paddingSize: 0,
       serie: 'A-Serie',
       suffixSize: 10,
       text: 'N/A',
@@ -213,6 +215,38 @@ export const BoxesEditor: React.FC<StandardEditorProps> = ({ item, value, onChan
               {oneBox.paddingSize ? (
                 <>
                   <Field label="Padding size">
+                    <Input
+                      type="number"
+                      onChange={(event) => {
+                        oneBox.paddingSize = parseInt(event.currentTarget.value, 10) || 10;
+                        onChange(options.boxes);
+                      }}
+                      value={oneBox.paddingSize}
+                    />
+                  </Field>
+                </>
+              ) : null}
+            </HorizontalGroup>
+            <HorizontalGroup>
+              {oneBox.paddingSize ? (
+                <>
+                  <Field label="Width">
+                    <Input
+                      type="number"
+                      onChange={(event) => {
+                        oneBox.paddingSize = parseInt(event.currentTarget.value, 10) || 10;
+                        onChange(options.boxes);
+                      }}
+                      value={oneBox.paddingSize}
+                    />
+                  </Field>
+                </>
+              ) : null}
+            </HorizontalGroup>
+            <HorizontalGroup>
+              {oneBox.paddingSize ? (
+                <>
+                  <Field label="Height">
                     <Input
                       type="number"
                       onChange={(event) => {

@@ -123,6 +123,16 @@ export const SimplePanel: React.FC<Props> = ({ options, data, onOptionsChange, w
                 transform: rotate(${oneBox.angle}deg);
                 display: block;
               `,
+              oneBox.width
+                ? css`
+                    width: ${oneBox.width}px;
+                  `
+                : '',
+              oneBox.height
+                ? css`
+                    height: ${oneBox.height}px;
+                  `
+                : '',
               oneBox.paddingSize
                 ? css`
                     padding: ${oneBox.paddingSize}px;

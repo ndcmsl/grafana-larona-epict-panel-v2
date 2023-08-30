@@ -9,6 +9,8 @@ export interface Box {
   text: string;
   suffix: string;
   prefix: string;
+  width: number;
+  height: number;
   xpos: number;
   ypos: number;
   angle: number;
