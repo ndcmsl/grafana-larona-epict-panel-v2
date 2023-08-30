@@ -121,7 +121,9 @@ export const SimplePanel: React.FC<Props> = ({ options, data, onOptionsChange, w
                 }
                 color: ${getBoxColor(oneBox)};
                 transform: rotate(${oneBox.angle}deg);
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
               `,
               oneBox.width
                 ? css`
