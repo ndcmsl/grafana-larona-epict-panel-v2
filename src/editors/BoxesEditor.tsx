@@ -242,6 +242,8 @@ export const BoxesEditor: React.FC<StandardEditorProps> = ({ item, value, onChan
                   </Field>
                 </>
               ) : null}
+            </HorizontalGroup>
+            <HorizontalGroup>
               {oneBox.height ? (
                 <>
                   <Field label="Height">
