@@ -228,32 +228,30 @@ export const BoxesEditor: React.FC<StandardEditorProps> = ({ item, value, onChan
               ) : null}
             </HorizontalGroup>
             <HorizontalGroup>
-              {oneBox.paddingSize ? (
+              {oneBox.width ? (
                 <>
                   <Field label="Width">
                     <Input
                       type="number"
                       onChange={(event) => {
-                        oneBox.paddingSize = parseInt(event.currentTarget.value, 10) || 10;
+                        oneBox.width = parseInt(event.currentTarget.value, 10) || 10;
                         onChange(options.boxes);
                       }}
-                      value={oneBox.paddingSize}
+                      value={oneBox.width}
                     />
                   </Field>
                 </>
               ) : null}
-            </HorizontalGroup>
-            <HorizontalGroup>
-              {oneBox.paddingSize ? (
+              {oneBox.height ? (
                 <>
                   <Field label="Height">
                     <Input
                       type="number"
                       onChange={(event) => {
-                        oneBox.paddingSize = parseInt(event.currentTarget.value, 10) || 10;
+                        oneBox.height = parseInt(event.currentTarget.value, 10) || 10;
                         onChange(options.boxes);
                       }}
-                      value={oneBox.paddingSize}
+                      value={oneBox.height}
                     />
                   </Field>
                 </>
