@@ -119,7 +119,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, onOptionsChange, w
                     left: ${oneBox.xpos}px;`
                     : undefined /*If autoscale is enabled, top and left are set by the autoscale function*/
                 }
-                color: ${getBoxColor(oneBox)};
+                background-color: ${getBoxColor(oneBox)};
                 transform: rotate(${oneBox.angle}deg);
                 display: flex;
                 justify-content: center;
