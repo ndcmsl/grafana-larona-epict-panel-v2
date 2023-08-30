@@ -104,7 +104,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, onOptionsChange, w
         />
         {boxes.map((oneBox, index) => (
           /*start one box processing*/
-          <span
+          <div
             onMouseDown={(event) => onBoxMouseDown(event, oneBox)}
             onClick={(event) => onBoxMouseClick(event, oneBox)}
             key={index}
@@ -299,7 +299,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, onOptionsChange, w
                 ></span>
               ) : null}
             </a>
-          </span>
+          </div> // cambiar a div
           /*end one box processing*/
         ))}
       </div>
